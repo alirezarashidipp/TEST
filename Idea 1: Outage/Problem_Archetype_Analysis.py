@@ -11,7 +11,7 @@ from sklearn.decomposition import PCA
 # Data preprocessing
 numerical_features = ['OUTAGE_DURATION_MINUTES_NUM']
 categorical_features = [
-    'CMDB_CONFIGURATION_TTEM_NAME',
+    'CMDB_CONFIGURATION_ITEM_NAME',
     'OUTAGE_TYPE_NAME',
     'IT_INCIDENT_SEVERITY_NAME',
     'PROBLEM_TASK_CAUSE_CODE',
