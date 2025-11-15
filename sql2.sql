@@ -6,7 +6,7 @@ WITH
       HR_EMPLOYEE_STATUS_DESC,
       LAG(HR_EMPLOYEE_STATUS_DESC) OVER (PARTITION BY EMPLOYEE_ID ORDER BY REPORT_DATE) AS prev_status
       FROM `hsbc-11359979-dbsrefinery-prod.shared_data_assets_archive_released_prod.DA_WPB_RESOURCE_AGILE_TEAM_MAPPING_ARCHIVE`
-      WHERE REPORT_DATE >= '2025-10-01' AND REPORT DATE <= '2025-10-31'
+      WHERE REPORT_DATE >= '2025-10-01' AND REPORT_DATE <= '2025-10-31'
       AND HR_L2_OSPD_NAME IN ('IWPB Technology', 'UK Technology')),
 
   assign_segment_groups AS (
